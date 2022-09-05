@@ -77,7 +77,6 @@ function showMain(target) {
   bandImage.src = image;
 }
 
-
 const sideBar = document.querySelector(".sideBar");
 initButtons(sideBar);
 

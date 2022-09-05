@@ -318,7 +318,7 @@ main {
   }
 }
 
-@media(max-width:650px) {
+@media(max-width:651px) {
   main {
     align-items: center;
   }
