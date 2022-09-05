@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
 
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -26,7 +25,6 @@ body {
 .header p {
   font-size: 1.8rem;
 }
-
 
 main {
   display: flex;
@@ -143,8 +141,49 @@ main {
   margin-bottom: 20px;
 }
 
-
 @media(max-width:1600px) {
+  .sideBar {
+    gap: 30px;
+  }
+
+  .section__text {
+    font-size: 1rem;
+    margin-top: 50px;
+  }
+
+  .buttons {
+    height: 80px;
+    width: 300px;
+  }
+
+  .buttons::before {
+    width: 2px;
+    height: 80px;
+    box-shadow: 298px 0 deeppink;
+  }
+
+  .buttons::after {
+    height: 2px;
+    width: 300px;
+    box-shadow: 0 78px deeppink;
+  }
+
+  .buttons:hover {
+    font-size: 1.9rem;
+  }
+
+  .buttons:hover::before {
+    left: -10px;
+    box-shadow: 318px 0 deeppink;
+  }
+
+  .buttons:hover::after {
+    top: -10px;
+    box-shadow: 0 98px deeppink;
+  }
+}
+
+@media(max-width:1400px) {
   .section__text {
     font-size: 1.1rem;
     margin-top: 5px;
@@ -158,17 +197,57 @@ main {
 
   .section__img {
     margin: 10px;
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
   }
 
   .section__song {
     margin-top: 30px;
     font-size: 1.2rem;
   }
+
+  .sideBar {
+    gap: 25px;
+  }
+
+  .buttons {
+    height: 60px;
+    width: 300px;
+  }
+
+  .buttons::before {
+    width: 2px;
+    height: 60px;
+    box-shadow: 298px 0 deeppink;
+  }
+
+  .buttons::after {
+    height: 2px;
+    width: 300px;
+    box-shadow: 0 58px deeppink;
+  }
+
+  .buttons:hover {
+    font-size: 2em;
+    transition: all 250ms ease-in-out;
+  }
+
+  .buttons:hover::before {
+    left: -8px;
+    box-shadow: 318px 0 deeppink;
+  }
+
+  .buttons:hover::after {
+    top: -8px;
+    box-shadow: 0 78px deeppink;
+  }
 }
 
 @media(max-width:1280px) {
+  .sideBar {
+    margin-left: 50px;
+  }
+
   .section__text {
     font-size: 0.8rem;
     margin-top: 5px;
@@ -178,12 +257,6 @@ main {
     font-size: 2rem;
   }
 
-  .container__image-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .section__img {
     margin: 10px;
     width: 300px;
@@ -195,7 +268,6 @@ main {
     font-size: 1.1rem;
   }
 }
-
 
 @media(max-width:913px) {
   .container {
@@ -207,13 +279,14 @@ main {
   }
 }
 
-@media(max-width:750px) {
+@media(max-width:790px) {
   main {
     display: flex;
     flex-direction: column;
   }
 
   .sideBar {
+    margin-left: 60px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 25% 25% 25%;
@@ -222,7 +295,7 @@ main {
   }
 
   .container {
-    margin: 0 50px;
+    margin: 50px 50px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -303,7 +376,6 @@ main {
 }
 
 @media(max-width:465px) {
-
   .header p {
     font-size: 1.1rem;
   }
@@ -338,5 +410,61 @@ main {
     width: 120px;
     height: 120px;
   }
+}
 
+@media(max-width:320px) {
+  .sideBar {
+    grid-column-gap: 9px;
+    grid-row-gap: 2px;
+    margin-left: 0px;
+  }
+
+  .buttons {
+    height: 25px;
+    width: 130px;
+    font-size: 0.7rem;
+  }
+
+  .buttons::before {
+    width: 2px;
+    height: 25px;
+    box-shadow: 128px 0 deeppink;
+  }
+
+  .buttons::after {
+    height: 2px;
+    width: 130px;
+    box-shadow: 0 23px deeppink;
+  }
+
+  .buttons:hover {
+    font-size: 0.9em;
+  }
+
+  .buttons:hover::before {
+    left: -4px;
+    box-shadow: 137px 0 deeppink;
+  }
+
+  .buttons:hover::after {
+    top: -4px;
+    box-shadow: 0 32px deeppink;
+  }
+
+  .section__song {
+    font-size: 0.7rem;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .section__title {
+    font-size: 0.9rem;
+    margin-top: 0;
+  }
+
+  .section__text {
+    font-size: 0.45rem;
+  }
 }
